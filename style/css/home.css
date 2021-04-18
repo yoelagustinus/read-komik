@@ -1,0 +1,290 @@
+/*Desain untuk isi page dari home*/
+.main {
+    height: auto;
+    color: black;
+    float: left;
+    font-size: 100%;
+}
+
+#left_side {
+    position: relative;
+    width: 74.5%;
+    height: auto;
+    margin-right: 1%;
+    padding: 0;
+    background-color: white;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    display: initial;
+    background-color: aqua;
+    width: auto;
+    height: auto;
+    padding: 0.9%;
+}
+
+.manga-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 3vw;
+    padding: 0 1%;
+}
+
+.manga-container a:visited {
+    color: black;
+}
+
+.manga-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.manga-container a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.manga {
+    width: 45%;
+    height: 12vw;
+    max-height: 120px;
+    margin: 1% 1.5%;
+    float: left;
+}
+
+.manga_img {
+    display: inline-block;
+    width: 31%;
+    max-width: 90px;
+    height: 100%;
+}
+
+.manga_img img {
+    width: 95%;
+    height: 95%;
+    border: 1.2px solid black;
+    border-radius: 4px;
+    padding: 1.5%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.manga_img img:hover {
+    box-shadow: 0 0 2px 1px aqua;
+}
+
+.manga_desc {
+    display: inline-block;
+    width: 67%;
+    height: 100%;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manga_desc table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.more {
+    text-decoration: none;
+    width: 98%;
+    display: inline-block;
+    text-align: center;
+    background-color: aqua;
+    font-size: 120%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1% 0;
+}
+
+#right_side {
+    width: 24.5%;
+    height: auto;
+    padding: 0;
+}
+
+.notice {
+    width: 92%;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 25px;
+    background-color: white;
+    border-top: 2px solid aqua;
+}
+
+.notice h3 {
+    color: blue;
+}
+
+.notice ol a:visited, .notice table a:visited {
+    color: blue;
+}
+
+.notice ol a, .notice table a {
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+.notice ol a:visited, .notice table a:visited {
+    color: black;
+}
+
+.notice ol a:hover, .notice table a:hover {
+    color: blue;
+}
+
+.notice ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 0;
+}
+
+.notice ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.notice ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: blue;
+    font-weight: bold;
+}
+
+.notice .img_lastest {
+    position: relative;
+    display: inline-block;
+    margin: 0.5% 1%;
+    height: 85px;
+    width: 85px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.notice table, .notice tr { 
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notice tr {
+    height: 30px;
+}
+
+.notice tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/*Desain dari slide show*/
+#slide_show {
+    position: relative;
+    display: block;
+    width: 96%;
+    height: 11.5%;
+    margin-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*Class untuk button prev dan next*/
+.button {
+    width: 2%;
+    vertical-align: middle;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 200px;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*Class untuk prev slide show*/
+.prev {
+    left: 0;
+    position: absolute;
+}
+
+/*Class untuk next slide show*/
+.next {
+    right: 0;
+    position: absolute;
+}
+
+/*Saat prev dan next di hover*/
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/*Saat prev dan next di click*/
+.prev:active, .next:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(204, 204, 204)
+}
+
+/*Div untuk menampilkan gambar dari slide show*/
+.img_container {
+    position: relative;
+    display: none;
+    float: left;
+    width: 19.5%;
+    height: 100%;
+    min-width: 150px;
+    max-width: 200px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1.5%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Div untuk menampilkan text dari slide show*/
+.text_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    transition: height 0.5s;
+}
+
+.text_container a:visited {
+    color: white;
+}
+
+.text_container a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.text_container a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.img_container:hover .text_container {
+    height: 30%;
+    visibility: visible;
+}

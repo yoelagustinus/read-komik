@@ -1,0 +1,112 @@
+.container{
+    width: 70%;
+    max-width: 700px;
+    font-size: 120%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 2.5%;
+    color: black;
+    background-color: #1e698d;
+    border-radius: 10px;
+}
+
+#form_input_new_komik{
+    width : 100%;
+    margin : auto;
+}
+
+#sin{
+    length : 70%;
+    height : 100px;
+    width : 80%;
+}
+.checkbox_container {
+    width: 80%;
+    height: auto;
+    font-size: 100%;
+}
+
+.checkbox_container ul {
+    list-style: none;
+    padding: 1vw;
+}
+.checkbox_container {
+    width: 80%;
+    height: auto;
+    font-size: 100%;
+}
+
+.checkbox_container ul {
+    list-style: none;
+    padding: 1vw;
+}
+
+.checkbox_container ul li {
+    display: inline;
+}
+
+.checkbox_container ul li label {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid rgba(0, 128, 192, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.checkbox_container ul li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "\f067";
+    font-weight: 900;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label::before {
+    transition: transform .3s ease-in-out;
+    content: "\f00c";
+    transform: rotate(-360deg);
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: RGB(255,128,192);
+    color: #fff;
+    transition: all .2s;
+}
+
+.checkbox_container ul li input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox_container ul li input[type="checkbox"]:focus + label {
+    border: 2px solid #e9a1ff;
+}
+
+h2.outset{
+    border-style: outset;
+    width: 30%;
+    
+}

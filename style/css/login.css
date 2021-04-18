@@ -1,0 +1,294 @@
+.tab {
+    width: 100%;
+    height: 3.5vw;
+    margin-bottom: 2.5%;
+}
+
+.tab .tab_button {
+    width: 50%;
+    height: 100%;
+    font-size: 2vw;
+    font-weight: bold;
+    float: left;
+    border: 1px solid black;
+    color: rgb(161, 159, 159);
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 4px 4px 2px rgba(136, 136, 136, 0.8);
+}
+
+.tab button.active, .tab button:active {
+    background-color: rgba(0, 0, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 1px rgba(136, 136, 136, 0.25);
+}
+
+.tab button:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: 3px 3px 2px rgba(136, 136, 136, 0.5);
+}
+
+.tab_content {
+    margin-bottom: 2.5%;
+    width: auto;
+    height: auto;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.container {
+    width: 50%;
+    max-width: 700px;
+    font-size: 120%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2.5%;
+    color: black;
+    background-color: #1e698d;
+    border-radius: 10px;
+}
+
+#login_form {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 1.5vw;
+    border: 1px solid black;
+    border-radius: 2vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#login_form input {
+    width: 80%;
+    font-size: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#login_form input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+#login_form input[type=text], #login_form input[type=password] {
+    height: 3vw;
+    line-height: 3vw;
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-bottom: 1px solid black;
+}
+
+#login_form input[type=checkbox] {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: auto;
+}
+
+#login_form label {
+    cursor: pointer;
+}
+
+#login_form input[type=submit] {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #1161ee;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+#login_form input[type=submit]:hover {
+    background-color: rgba(17, 97, 238, 0.7);
+    box-shadow: 4px 4px 2.5px rgba(136, 136, 136, 0.8);
+}
+
+.container p {
+    margin: 5%;
+    float: left;
+}
+
+#signup_form {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+#signup_form .signup_div {
+    width: 100%;
+    height: auto;
+    animation: fadeEffect 0.5s;
+    padding-bottom: 1.5vw;
+    border: 1px solid black;
+    border-radius: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#signup_form input {
+    font-size: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#signup_form input:focus {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#signup_form input[type=text], #signup_form input[type=password] {
+    width: 80%;
+    height: 3vw;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: gray;
+    border: 1px solid black;
+}
+
+#signup_form input[type=date] {
+    width: 50%;
+    height: 3vw;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: gray;
+    border: 1px solid black;
+}
+
+#signup_form textarea {
+    width: 90%;
+    height: 15vw;
+    font-size: 100%;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#signup_form textarea:focus {
+    color: black;
+    background-color: white;
+}
+
+#signup_form input[type=file] {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#signup_form button, #signup_form input[type=submit] {
+    width: 30%;
+    margin-top: 5%;
+    height: 3.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1.5vw;
+    background-color: #1161ee;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 100%;
+}
+
+#signup_form button:hover, #signup_form input[type=submit]:hover {
+    background-color: rgba(17, 97, 238, 0.7);
+    box-shadow: 2px 2px 1px #888888;
+}
+
+.left_button {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+.right_button {
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 8%;
+}
+
+.checkbox_container {
+    width: 80%;
+    height: auto;
+    font-size: 100%;
+    margin: auto;
+}
+
+.checkbox_container ul {
+    list-style: none;
+    padding: 1vw;
+}
+
+.checkbox_container ul li {
+    display: inline;
+}
+
+.checkbox_container ul li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.checkbox_container ul li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "\f067";
+    font-weight: 900;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label::before {
+    transition: transform .3s ease-in-out;
+    content: "\f00c";
+    transform: rotate(-360deg);
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: #12bbd4;
+    color: #fff;
+    transition: all .2s;
+}
+
+.checkbox_container ul li input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox_container ul li input[type="checkbox"]:focus + label {
+    border: 2px solid #e9a1ff;
+}

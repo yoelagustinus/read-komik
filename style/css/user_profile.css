@@ -1,0 +1,154 @@
+.container {
+    width: 70%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5%;
+    background-color: white;
+    font-size: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+.container table .user_photo {
+    float: left;
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+    max-height: 280px;
+    overflow: hidden;
+    border: 1px solid blue;
+    margin-right: 2.5%;
+}
+
+.container table .user_photo img {
+    display: block;
+    width: 92%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    padding: 4%;
+    object-fit: cover;
+    object-position: 0 0;
+    -o-object-fit: cover;
+    -o-object-position: 0 0;
+}
+
+.container table .user_photo .change_photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.7);
+    padding: 2%;
+}
+
+.container table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    margin-bottom: 5px;
+}
+
+.container table .profile_textarea {
+    width: 80%;
+    height: auto;
+    min-height: 10px;
+    font-family: Arial;
+}
+
+.container form input, .container textarea {
+    border: none;
+}
+
+.container form input:focus, .container textarea:focus {
+    border: 1px solid black;
+}
+
+.checkbox_container {
+    float: left;
+    width: 90%;
+    height: auto;
+    font-size: 100%;
+}
+
+.checkbox_container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox_container ul li {
+    display: inline;
+}
+
+.checkbox_container ul li label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #adadad;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+.checkbox_container ul li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    content: "\f067";
+    font-weight: 900;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 6px 2px 2px;
+    transition: transform .3s ease-in-out;
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label::before {
+    transition: transform .3s ease-in-out;
+    content: "\f00c";
+    transform: rotate(-360deg);
+}
+
+.checkbox_container ul li input[type="checkbox"]:checked + label {
+    border: 2px solid #1bdbf8;
+    background-color: #12bbd4;
+    color: #fff;
+    transition: all .2s;
+}
+
+.checkbox_container ul li input[type="checkbox"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox_container ul li input[type="checkbox"]:focus + label {
+    border: 2px solid #e9a1ff;
+}
+
+.container form input[type=submit] {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 0.5%;
+    font-weight: bold;
+    font-size: 110%;
+    box-shadow: 2px 2px 3px black;
+}

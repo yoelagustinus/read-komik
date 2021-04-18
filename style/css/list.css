@@ -1,0 +1,150 @@
+/*Desain untuk isi page dari list*/
+.main {
+    color: black;
+    float: left;
+}
+
+#left_side {
+    position: relative;
+    width: 74.5%;
+    height: auto;
+    margin-right: 1%;
+    padding: 0;
+    background-color: white;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    display: initial;
+    background-color: aqua;
+    width: auto;
+    height: auto;
+    padding: 0.9%;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.ListNya {
+    width: 90%;
+    height: auto;
+    margin-left: 1%;
+    background-color: beige;
+}
+
+.ListNya a:visited {
+    color: black;
+}
+
+.ListNya a {
+    text-decoration: none;
+    color: black;
+}
+
+.ListNya a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.listManga {
+    width: 72%;
+    padding: 1%;
+    margin: auto;
+    color: blue;
+    margin-top: 5%;
+}
+
+.listManga a:visited {
+    color: blue;
+}
+
+#right_side {
+    width: 24.5%;
+    height: auto;
+    padding: 0;
+}
+
+.notice {
+    width: 92%;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 25px;
+    background-color: white;
+    border-top: 2px solid aqua;
+}
+
+.notice h3 {
+    color: blue;
+}
+
+.notice ol a:visited, .notice table a:visited {
+    color: black;
+}
+
+.notice ol a, .notice table a {
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+.notice ol a:hover, .notice table a:hover {
+    color: blue;
+}
+
+.notice ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding: 0;
+}
+
+.notice ol li {
+    counter-increment: my-awesome-counter;
+}
+
+.notice ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: blue;
+    font-weight: bold;
+}
+
+.notice .img_lastest {
+    position: relative;
+    display: inline-block;
+    margin: 0.5% 1%;
+    height: 85px;
+    width: 85px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.notice table, .notice tr {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notice tr {
+    height: 30px;
+}
+
+.notice tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.more {
+    text-decoration: none;
+    width: 98%;
+    display: inline-block;
+    text-align: center;
+    background-color: aqua;
+    font-size: 120%;
+    margin-top: 2%;
+    padding: 1% 0;
+}
